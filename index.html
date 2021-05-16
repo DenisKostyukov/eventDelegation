@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script defer src="./assets/js/createElement.js"></script>
+  <script defer src="assets/js/table.js"></script>
+  <script defer src="./assets/js/list.js"></script>
+  <title>Event delegation</title>
+</head>
+<body>
+  <ul class="list">
+    <li>List item 1
+      <ul class="subList">
+        <li>Sub list item 1</li>
+        <li>Sub list item 2</li>
+        <li>Sub list item 3</li>
+        <li>Sub list item 4</li>
+      </ul>
+    </li>
+    <li>List item 2
+      <ul class="subList">
+        <li>Sub list item 1</li>
+        <li>Sub list item 2</li>
+        <li>Sub list item 3</li>
+        <li>Sub list item 4</li>
+      </ul>
+    </li>
+    
+    <li>List item 3
+      <ul class="subList">
+        <li>Sub list item 1</li>
+        <li>Sub list item 2</li>
+        <li>Sub list item 3</li>
+        <li>Sub list item 4</li>
+      </ul>
+    </li>
+    <li>List item 4
+      <ul class="subList">
+        <li>Sub list item 1</li>
+        <li>Sub list item 2</li>
+        <li>Sub list item 3</li>
+        <li>Sub list item 4</li>
+      </ul>
+    </li>
+  </ul>
+  <table id="table">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>John@mail.ru</td>
+        <td><button>Delete</button></td>
+      </tr>
+      <tr>
+        <td>Test</td>
+        <td>Test@gmail.com</td>
+        <td><button>Delete</button></td>
+      </tr>
+      <tr>
+        <td>Bob</td>
+        <td>Bob@mail.ua</td>
+        <td><button>Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+  <form action="" id="addForm">
+    <label>
+      Name
+      <input name="name" type="text">
+    </label>
+    <label>
+      email
+      <input name="email" type="text">
+    </label>
+    <button>Add</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,9 @@
+table{
+  border-collapse: collapse;
+}
+td, th{
+  border: 2px solid;
+}
+form{
+  margin-top: 20px;
+}
