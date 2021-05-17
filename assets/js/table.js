@@ -11,14 +11,17 @@ function tableListener({
     input.value = target.innerText;
     target.innerText = ""
     target.append(input);
-    input.addEventListener("keyup", (e) => {
-      if (e.key === 'Enter') {
-        target.innerText = input.value
-      }
-    })
   }
 }
+function inputlistener({key ,target}){
+    if (key === 'Enter') {
+      target.parentNode.innerText= target.value;
+      target.remove()
+    }
+}
+
 table.addEventListener("click", tableListener)
+table.addEventListener("keyup", inputlistener)
 const addForm = document.getElementById("addForm");
 
 addForm.addEventListener("submit", (e) => {
